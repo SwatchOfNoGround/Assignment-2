@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles starts */
+/* color section stats */
+.orange{
+  color: orange;
+}
+.sky-blue{
+  color: skyblue;
+}
+.bluish{
+  color: #05D4DF
+}
+.blue{
+  color: #5D58EF;
+}
+/* color section ends */
+.flex{
+  display: flex;
+}
+/* shared styles ends */
+
+nav{
+  padding: 1% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link{
+  text-decoration: none;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.contact-btn{
+  padding: 8px 24px;
+  background-color: orange;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+}
