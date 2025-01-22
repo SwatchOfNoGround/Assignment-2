@@ -183,15 +183,27 @@ nav a{
   border-radius: 50%;
   color: #FFFFFF;
 }
-.hover-text {
-  visibility: hidden;
+/* hover effect starts */
+.arrow {
+  position: relative;
+}
+.arrow::after {
+  content: "See more";
   position: absolute;
-  top: 50%;
-  left: 100%;
+  visibility: hidden;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-.left-arrow:hover + .hover-text {
+.arrow:hover::after {
   visibility: visible;
+  /* Not working */
 }
+.arrow:hover{
+  cursor: pointer;
+}
+/* Hover effect ends */
 /* Responsive card section starts */
 @media screen and (max-width: 576px) {
   .card-holder{
