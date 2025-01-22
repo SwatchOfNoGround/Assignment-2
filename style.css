@@ -128,13 +128,14 @@ nav a{
   margin: 5% 10%;
 }
 .card{
-  padding: 1.5em;
+  padding: 2em;
   border: 1px;
   border-radius: 10px;
   box-shadow: 0 1px 1px #DEF5FF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   min-height: 300px;
   width: auto;
 }
@@ -142,10 +143,10 @@ nav a{
   background: linear-gradient(to bottom, #DEF5FF 10%, transparent 25%);
 }
 .card-2{
-  background-image: linear-gradient(#FFF4DC 1%, transparent 25%);
+  background: linear-gradient(#FFF4DC 1%, transparent 25%);
 }
 .card-3{
-  background-image: linear-gradient(#F2E8FF 1%, transparent 25%);
+  background: linear-gradient(#F2E8FF 1%, transparent 25%);
 }
 .read-more-1{
   padding: 1em 3em;
@@ -167,4 +168,68 @@ nav a{
   color: #FFFFFF;
   border: none;
   border-radius: 1em;
+}
+.arrow-icon{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto;
+}
+.arrow-icon button{
+  background-color: orange;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+/* Responsive card section starts */
+@media screen and (max-width: 576px) {
+  .card-holder{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .arrow-icon button{
+    display: none;
+  }
+}
+/* Responsive card section ends */
+/* Our story section starts */
+.our-stories-section{
+  background-image: 
+  linear-gradient(to top, rgba(254, 161, 1, 0.349), rgba(253, 252, 252, 0.2)), /* Gradient layer from bottom to top */
+  url('assets/bg.png');
+}
+.our-stories-section-margin{
+  margin: 5% 10% 10% 10%;
+}
+.our-stories{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.our-stories-card-container{
+  display: flex;
+  gap: 1.2em;
+}
+.small-cards-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2em;  
+}
+.large-card{
+  width: 60vw;
+  border-radius: 10px;
+  background: #FFFFFF;
+
+}
+.large-card-image img{
+  width: 100%;
+}
+.small-card{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.small-card-image img{
+  width: 100%;
 }

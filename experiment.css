@@ -1,8 +1,57 @@
-.card-section{
-    background-image: url(assets/bg.png);
-}
-.card{
-    height: auto;
-    width: auto;
-    background-image: linear-gradient(skyblue, white);
-}
+.our-stories-card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Large card gets twice the width of small cards */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Spacing between grid items */
+    width: 100%;
+  }
+  
+  .large-card {
+    grid-column: span 2; /* Spans across 2 columns */
+    grid-row: span 2; /* Spans across 2 rows */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .large-card-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .large-card-text button {
+    display: inline-block;
+  }
+  
+  .small-card-1, .small-card-2, .small-card-3, .small-card-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .small-card-1-image img,
+  .small-card-2-image img,
+  .small-card-3-image img,
+  .small-card-4-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .small-card-1 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .small-card-2 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .small-card-3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .small-card-4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
