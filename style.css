@@ -111,7 +111,7 @@ nav a{
 }
 /* responsive Hero section ends */
 .card-section{
-  background-image: url(assets/bg.png);
+  background-image: url("./assets/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@ nav a{
 .our-stories-section{
   background-image: 
   linear-gradient(to top, rgba(254, 161, 1, 0.349), rgba(253, 252, 252, 0.2)), /* Gradient layer from bottom to top */
-  url('assets/bg.png');
+  url('./assets/bg.png');
 }
 .our-stories-section-margin{
   margin: 5% 10% 0% 10%;
