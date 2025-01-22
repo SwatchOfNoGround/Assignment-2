@@ -183,6 +183,15 @@ nav a{
   border-radius: 50%;
   color: #FFFFFF;
 }
+.hover-text {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+.left-arrow:hover + .hover-text {
+  visibility: visible;
+}
 /* Responsive card section starts */
 @media screen and (max-width: 576px) {
   .card-holder{
@@ -285,7 +294,6 @@ nav a{
   background-color: #01ACFD;
   padding: 15vh 10vw 20vh 10vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: start;
   color:#FFFFFF
@@ -302,7 +310,24 @@ nav a{
 }
 .footer-middle-div ul{
   list-style: none;
+  padding: 0;
+}
+.footer-middle-div li{
+  padding: 0;
+  margin-bottom: 8px;
 }
 .footer-right-div{
   width: 20vw;
+}
+/* Responsive footer starts */
+@media screen and (max-width: 576px) {
+  .footer{
+    display: block;
+  }
+  .footer-left-div{
+    width: 100%;
+  }
+  .footer-right-div{
+    width: 100%;
+  }
 }
