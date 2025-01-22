@@ -215,7 +215,7 @@ nav a{
   }
 }
 /* Responsive card section ends */
-/* Our story section starts */
+/* Our stories section starts */
 .our-stories-section{
   background-image: 
   linear-gradient(to top, rgba(254, 161, 1, 0.349), rgba(253, 252, 252, 0.2)), /* Gradient layer from bottom to top */
@@ -242,10 +242,10 @@ nav a{
   width: 60vw;
   border-radius: 10px;
   background: #FFFFFF;
-
 }
 .large-card-image img{
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .small-card{
   background-color: #FFFFFF;
@@ -253,6 +253,7 @@ nav a{
 }
 .small-card-image img{
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .our-stories-card-container button{
   padding: 1.5vh 3vw;
